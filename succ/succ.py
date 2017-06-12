@@ -15,8 +15,8 @@ class Succ:
     async def givemethesucc(self, ctx, *, user: discord.Member=None):
         """Gives you succ"""
         botid = self.bot.user.id
-            user = ctx.message.author
-            await self.bot.say("**Slurp Slurp**")
+        user = ctx.message.author
+        await self.bot.say("**Slurp Slurp**")
 
 def setup(bot):
     n = Succ(bot)
